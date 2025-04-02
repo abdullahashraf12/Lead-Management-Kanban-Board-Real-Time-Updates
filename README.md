@@ -62,5 +62,5 @@ npm run dev
 # now for backend make sure redis contained installed after docker installation check any youtube tutorial for this if you don't know
 # now in backend folder "Lead-Management-Kanban-Board-Real-Time-Updates\LightweightCRMFeature"
 python manage.py runserver 127.0.0.1:80
-bash
+
 Thatis All
