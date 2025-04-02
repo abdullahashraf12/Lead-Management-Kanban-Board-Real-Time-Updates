@@ -18,12 +18,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from UserAuthentication.views import login_post,register_post,check_User_Login,logout_user
-from django.http import JsonResponse
-from django.middleware.csrf import get_token
+
 from django.urls import re_path
 from Home.consumers import KanbanConsumer
-def get_csrf_token(request):
-    return JsonResponse({'csrfToken': get_token(request)})
+from Home.views import get_csrf_token
 
 urlpatterns = [
     path("api/checkUserLogin/", check_User_Login),
