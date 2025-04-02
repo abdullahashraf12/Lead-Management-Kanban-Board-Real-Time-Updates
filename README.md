@@ -67,6 +67,7 @@ cd Lead-Management-Kanban-Board-Real-Time-Updates\LightweightCRMFeature\Lightwei
 ```
 ### Make sure Vite is installed by running:
 ```bash
+npm install
 npm run dev
 npm install vite # if error says module not found (vite) not installed Now Rerun the wollowing command
 npm run dev
