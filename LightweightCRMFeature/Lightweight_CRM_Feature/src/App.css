@@ -1,0 +1,66 @@
+/* Add these to your existing styles */
+
+/* Card styles */
+.kanban-card {
+  position: relative;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+.status-badge {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status-badge.new {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.status-badge.contacted {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+.status-badge.qualified {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.status-badge.lost {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.updated-at {
+  color: #757575;
+}
+
+/* Column header styles */
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.count-badge {
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+}
+
+/* Drag overlay styles */
+.dragging {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: rotate(3deg);
+}
