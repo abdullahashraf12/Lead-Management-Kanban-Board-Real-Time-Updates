@@ -47,20 +47,42 @@ Docker: A containerization platform that allows the application to run in isolat
 - pip (v24+ recommended)
 
 ## Installation
+## Installation Guide
 
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/abdullahashraf12/Lead-Management-Kanban.git
 cd Lead-Management-Kanban-Board-Real-Time-Updates
+```
+
+### 2. Clone the Repository
+```bash
 ./venv/Scripts/Activate
 cd LightweightCRMFeature
-# in here open another terminal for ui at this path "Lead-Management-Kanban-Board-Real-Time-Updates\LightweightCRMFeature\Lightweight_CRM_Feature" and make sure vite is installed via running the following command
+```
+### 3. Set Up Frontend
+In a new terminal, navigate to the UI folder:
+```bash
+cd Lead-Management-Kanban-Board-Real-Time-Updates\LightweightCRMFeature\Lightweight_CRM_Feature
+```
+### Make sure Vite is installed by running:
+```bash
 npm run dev
-# if vite not installed then do npm install vite
-#now re run again
+npm install vite # if error says module not found (vite) not installed Now Rerun the wollowing command
 npm run dev
-# now for backend make sure redis contained installed after docker installation check any youtube tutorial for this if you don't know
-# now in backend folder "Lead-Management-Kanban-Board-Real-Time-Updates\LightweightCRMFeature"
+```
+### 4. Set Up Backend
+Make sure Redis is installed after Docker installation. Check any YouTube tutorial if you're unsure.
+
+Now, in the backend folder:
+```bash
+cd Lead-Management-Kanban-Board-Real-Time-Updates\LightweightCRMFeature
 python manage.py runserver 127.0.0.1:80
 
-Thatis All
+```
+## That's All
+
+
+
+
+
