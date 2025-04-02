@@ -55,7 +55,7 @@ git clone https://github.com/abdullahashraf12/Lead-Management-Kanban.git
 cd Lead-Management-Kanban-Board-Real-Time-Updates
 ```
 
-### 2. Clone the Repository
+### 2. Activate Venv & Navigating To The Project Folder
 ```bash
 ./venv/Scripts/Activate
 cd LightweightCRMFeature
