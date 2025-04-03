@@ -108,7 +108,7 @@ const KanbanBoard: React.FC = () => {
       const updatedLead: Lead = {
         ...lead,
         status: newStatus,
-        updatedAt: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
       };
       
       updateLead(updatedLead);
@@ -229,7 +229,7 @@ const KanbanBoard: React.FC = () => {
                 }
                 return `Moving lead ${active.id} near lead ${over.id}`;
               }
-              return null;
+              return undefined;
             },
             onDragEnd({ active, over }) {
               if (over?.id) {
@@ -238,7 +238,11 @@ const KanbanBoard: React.FC = () => {
                   : leads.find(l => l.id === over.id)?.status;
                 return `Lead ${active.id} moved to ${status} column`;
               }
-              return null;
+              return undefined;
+            },
+            onDragCancel() {
+              // Empty function to satisfy type requirement
+              return undefined;
             },
           },
         }}
@@ -285,7 +289,7 @@ const KanbanBoard: React.FC = () => {
               }}
               data-testid="dragging-card"
             >
-              <KanbanCard lead={activeLead} isDragging />
+              <KanbanCard lead={activeLead} />
             </div>
           ) : null}
         </DragOverlay>

@@ -10,7 +10,7 @@ const LeadForm: React.FC = () => {
   const navigate = useNavigate();
   const { leads, updateLead, addLead } = useWebSocket();
 
-  const [lead, setLead] = React.useState<Omit<Lead, 'id' | 'createdAt' | 'updatedAt'> | Lead>({
+  const [lead, setLead] = React.useState<Omit<Lead, 'id' | 'created_at' | 'updated_at'> | Lead>({
     name: '',
     email: '',
     phone: '',
